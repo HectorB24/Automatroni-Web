@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Open+Sans:wght@300;500;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Automatroni | Administración</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --input-color: #CDCFDE;
+            --buttom-color: #536FC9;
+            --question-color: #273B7C;
+            --md: 28px;
+            --lg: 44px;
+        }
+        body{
+            margin: 0;
+            background-image: url(./login-background.jpg);
+            background-size: cover;
+            font-family: 'Fredoka', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .login-admin{
+            margin-left: 38px;
+            width: 800px;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--white);
+            border: solid var(--white);
+            border-radius: 88px;
+            height: 800px;
+            width: 600px;
+            box-shadow: 0px 32px 32px 1px black;
+        }
+        .logo-automatroni{
+            margin-top: 20px;
+            width: 150px; 
+            margin-bottom: 28px;
+            justify-self: center;
+        }
+        .title{
+            font-size: var(--lg);
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .form-login-admin{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+        .label-user{
+            font-size: var(--md);
+            font-weight:500px;
+            margin-bottom: 8px;
+        }
+        .input{
+            background-color: var(--input-color);
+            border: none;
+            border-radius: 32px;
+            height: 40px;
+            font-size: var(--md);
+            padding: 6px;
+            margin-bottom: 28px;
+        }
+        .enter-buttom{
+            text-align: center;
+            background-color: var(--buttom-color);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 180px;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+            margin-left: 160px;
+            margin-top: 44px;
+            margin-bottom: 28px;
+            font-family: 'Fredoka', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .question-login{
+            font-size: var(--md);
+            font-weight: bold;
+            color: var(--question-color);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-admin">
+        <div class="form-container">
+            <img src="./logo.png" alt="logo-automatroni" class="logo-automatroni">
+            <div class="title">
+                ÁREA DE ADMINISTRADORES
+            </div>
+            <form action="/" class="form-login-admin">
+                <label for="UTF-8" class="label-user">Usuario</label>
+                <input type="" id="user" class="input input-user">
+
+                <label for="password-user" class="label-user">Contraseña</label>
+                <input type="password"  id="password-user" placeholder="*********" class="input input-password">
+
+                <input type="submit" value="ENTRAR" class="enter-buttom">
+            </form>
+            <div class="question-login">¿Olvidó su contraseña?</div>
+        </div>
+    </div>
+</body>
+</html>
