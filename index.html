@@ -13,6 +13,7 @@
             --input-color: #CDCFDE;
             --buttom-color: #536FC9;
             --question-color: #273B7C;
+            --sm: 20px;
             --md: 28px;
             --lg: 44px;
         }
@@ -74,22 +75,25 @@
             margin-bottom: 28px;
         }
         .enter-buttom{
+            /*texto interno*/
             text-align: center;
             background-color: var(--buttom-color);
-            border-radius: 8px;
-            border: none;
-            color: var(--white);
-            width: 180px;
-            cursor: pointer;
             font-size: var(--md);
-            font-weight: bold;
-            height: 50px;
-            margin-left: 160px;
-            margin-top: 44px;
-            margin-bottom: 28px;
             font-family: 'Fredoka', sans-serif;
             font-family: 'Open Sans', sans-serif;
             font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            /*dimensiones y posición del button y del modelo de caja*/
+            width: 180px;
+            height: 50px;
+            margin-top: 44px;
+            margin-bottom: 28px;
+            align-self: center;
+            /*estilo*/
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
         }
         .question-login{
             font-size: var(--md);
@@ -97,6 +101,51 @@
             color: var(--question-color);
             text-align: center;
             text-decoration: none;
+        }
+        @media(max-width:1280px) or (max-height:800px){
+            body{
+                background-image: url(./imagenes/login-background-responsive.png);
+                display: flex;
+                justify-content: center;
+            }
+            .login-admin{
+                margin-left: 0px;
+                width: 350px;
+            }
+            .form-container{
+                height: 540px;
+                width: 340px;
+            }
+            .logo-automatroni{
+                width: 110px;
+                margin-bottom: 0px;
+            }
+            .title{
+                font-size: var(--md);
+                margin-bottom: 16px;
+            }
+            .form-login-admin{
+                width: 300px;
+            }
+            .label-user{
+                font-size: var(--sm);
+            }
+            .input{
+                height: 25px;
+                font-size: var(--sm);
+                margin-bottom: 20px;
+            }
+            .enter-buttom{
+                /*texto interno*/
+                font-size: var(--sm);
+                /*dimensiones y posición del button y del modelo de caja*/
+                width: 150px;
+                margin-top: 14px;
+                margin-bottom: 16px;
+            }
+            .question-login{
+                font-size: var(--sm);
+            }
         }
     </style>
 </head>
