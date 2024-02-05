@@ -9,7 +9,7 @@
 }
 body{
     margin: 0;
-    background-image: url(./imagenes/login-background-responsive.png);
+    background-image: url(./imagenes/login-background-responsive.jpg);
     display: flex;
     justify-content: center;
     background-size: cover;
@@ -31,12 +31,15 @@ body{
     background-color: var(--white);
     border: solid var(--white);
     border-radius: 88px;
-    height: 540px;
+    height: 560px;
     width: 340px;
     box-shadow: 0px 32px 32px 1px black;
 }
+figure{
+    margin: 0;
+}
 .logo-automatroni{
-    margin-top: 20px;
+    margin-top: 16px;
     width: 110px;
     margin-bottom: 0px;
     justify-self: center;
@@ -57,7 +60,7 @@ body{
     font-weight:500px;
     margin-bottom: 8px;
 }
-.input{
+.input-user, .input-password{
     background-color: var(--input-color);
     border: none;
     border-radius: 32px;
@@ -65,6 +68,7 @@ body{
     font-size: var(--sm);
     padding: 6px;
     margin-bottom: 20px;
+    width: 280px;
 }
 .enter-buttom{
     /*texto interno*/
@@ -87,10 +91,22 @@ body{
     border-radius: 8px;
     cursor: pointer;
 }
+.enter-buttom:hover{
+    background-color: var(--question-color);
+}
+.enter-buttom:active{
+    background-color: var(--buttom-color);
+}
 .question-login{
     font-size: var(--sm);
     font-weight: bold;
     color: var(--question-color);
     text-align: center;
     text-decoration: none;
+}
+.question-login:hover{
+    color: var(--buttom-color);
+}
+.question-login:active{
+    color: var(--question-color);
 }
