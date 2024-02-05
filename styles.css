@@ -54,11 +54,13 @@ figure{
     display: flex;
     flex-direction: column;
     width: 300px;
+    font-family: 'Quicksand', sans-serif;
 }
 .label-user{
     font-size: var(--sm);
     font-weight:500px;
     margin-bottom: 8px;
+    font-family: 'Quicksand', sans-serif;
 }
 .input-user, .input-password{
     background-color: var(--input-color);
