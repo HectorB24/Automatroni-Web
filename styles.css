@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 :root{
     --white: #FFFFFF;
     --input-color: #CDCFDE;
@@ -8,7 +13,6 @@
     --lg: 44px;
 }
 body{
-    margin: 0;
     background-image: url(./imagenes/login-background-responsive.jpg);
     display: flex;
     justify-content: center;
