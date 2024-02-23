@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --white: #FFFFFF;
+    --input-color: #CDCFDE;
+    --buttom-color: #536FC9;
+    --question-color: #273B7C;
+    --sm: 20px;
+    --md: 28px;
+    --lg: 44px;
+}
+body{
+    margin: 0;
+    background-image: url(./imagenes/login-background-responsive.jpg);
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+.login-admin{
+    margin-left: 0px;
+    width: 380px;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border: solid var(--white);
+    border-radius: 88px;
+    height: 444px;
+    width: 380px;
+    box-shadow: 0px 32px 32px 1px black;
+}
+figure{
+    margin: 0;
+}
+.logo-automatroni{
+    margin-top: 16px;
+    width: 110px;
+    margin-bottom: 0px;
+    justify-self: center;
+}
+.title{
+    font-size: var(--md);
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.form-login-admin{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-family: 'Quicksand', sans-serif;
+}
+.label-user{
+    font-size: var(--sm);
+    font-weight:500px;
+    margin-bottom: 8px;
+    font-family: 'Quicksand', sans-serif;
+}
+.section-email{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--input-color);
+    border: none;
+    border-radius: 32px;
+    height: 40px;
+    font-size: var(--sm);
+    padding: 0px;
+    margin-bottom: 20px;
+    width: 292px;
+}
+.section-email label{
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+}
+.email-image{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+.input-user{
+    display: inline-block;
+    width: 230px;
+    height: 38px;
+    background-color: var(--input-color);
+    margin: 0;
+    border: 0;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+}
+.enter-buttom{
+    /*texto interno*/
+    text-align: center;
+    background-color: var(--buttom-color);
+    font-size: var(--sm);
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    /*dimensiones y posición del button y del modelo de caja*/
+    width: 150px;
+    height: 50px;
+    margin-top: 14px;
+    margin-bottom: 16px;
+    align-self: center;
+    /*estilo*/
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.enter-buttom:hover{
+    background-color: var(--question-color);
+}
+.enter-buttom:active{
+    background-color: var(--buttom-color);
+}
+.question-login{
+    font-size: var(--sm);
+    font-weight: bold;
+    color: var(--question-color);
+    text-align: center;
+    text-decoration: none;
+}
+.question-login:hover{
+    color: var(--buttom-color);
+}
+.question-login:active{
+    color: var(--question-color);
+}
