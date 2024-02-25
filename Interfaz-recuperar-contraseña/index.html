@@ -10,31 +10,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Open+Sans:wght@300;500;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./imagenes/logo-automatroni-icono.ico">
     <title>Automatroni | Administración</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles-tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./styles/styles-desktop.css" media="screen and (min-width: 900px) and (min-height:900px)">
 </head>
 <body>
-    <main class="login-admin">
-        <section class="form-container">
-            <figure>
-                <img src="./imagenes/logo.svg" alt="logo-automatroni" class="logo-automatroni">
-            </figure>
-            
-            <h1 class="title">
-                ¿Olvidó su contraseña?
-            </h1>
-            <span>Ingrese su correo electrónico</span>
-            <form action="/" class="form-login-admin">
-                <section class="section-email">
-                    <label for="user">
-                        <img class="email-image" src="./imagenes/email.ico" alt="email">
-                    </label>
-                    <input type="email" id="user" class="input input-user" autocomplete="name" required>
-                </section>
-
+    <main>
+        <section class="container">
+            <section class="sect-1">
+                <figure>
+                    <img src="./imagenes/logo.svg" alt="logo-automatroni" class="logo-automatroni">
+                </figure>
+                
+                <h1 class="title">
+                    ¿Olvidó su contraseña?
+                </h1>
+                <span>Ingrese su correo electrónico</span>
+                <form action="/" class="form-password">
+                    <section class="section-email">
+                        <label for="email">
+                            <img class="email-icon" src="./imagenes/email.ico" alt="email">
+                        </label>
+                        <input type="email" id="email" class="input input-email" autocomplete="name" required>
+                    </section>
+                </form>
+            </section>
+            <section class="sect-2">
                 <input type="submit" value="RECUPERAR" class="enter-buttom">
-            </form>
-
-            <a href="../Interfaz-login-Administrador-Automatroni/index.html" class="question-login">Volver a iniciar sesión</a>
+                <a href="../Interfaz-login-Administrador-Automatroni/index.html" class="question-login">Volver a iniciar sesión</a>
+            </section>
         </section>
     </main>
 </body>
