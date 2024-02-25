@@ -8,95 +8,105 @@
     --input-color: #CDCFDE;
     --buttom-color: #536FC9;
     --question-color: #273B7C;
-    --sm: 20px;
-    --md: 28px;
-    --lg: 44px;
+    --sm: 1.6rem;
+    --md: 2.0rem;
+    --lg: 4rem;
+}
+html{
+    font-size: 62.5%;
 }
 body{
-    margin: 0;
     background-image: url(./imagenes/login-background-responsive.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
-    background-size: cover;
-    font-family: 'Fredoka', sans-serif;
-    font-family: 'Open Sans', sans-serif;
     font-family: 'Quicksand', sans-serif;
 }
-.login-admin{
-    margin-left: 0px;
-    width: 350px;
+main{
+    width: 100vw;
     height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.form-container{
+main .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    width: 95%;
     background-color: var(--white);
     border: solid var(--white);
-    border-radius: 88px;
-    height: 566px;
-    width: 346px;
-    box-shadow: 0px 32px 32px 1px black;
+    border-radius: 7rem;
+    box-shadow: 0 3.2rem 3.2rem 0.1rem black;
 }
-figure{
-    margin: 0;
+main .sect-1, main .sect-2{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .sect-2{
+    margin-bottom: 2rem;
 }
 .logo-automatroni{
-    margin-top: 16px;
-    width: 110px;
-    margin-bottom: 0px;
+    margin-top: 0.8rem;
+    width: 9rem;
     justify-self: center;
 }
 .title{
     font-size: var(--md);
     font-weight: bold;
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-top: 1.8rem;
+    margin-bottom: 1.6rem;
     text-align: center;
 }
 .form-login-admin{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
     font-family: 'Quicksand', sans-serif;
+    padding: 1rem;
 }
 .label-user{
     font-size: var(--sm);
-    font-weight:500px;
-    margin-bottom: 8px;
+    font-weight: 50rem;
+    margin-bottom: 0.8rem;
     font-family: 'Quicksand', sans-serif;
 }
 .input-user, .input-password{
     background-color: var(--input-color);
     border: none;
-    border-radius: 32px;
-    height: 40px;
+    padding: 0.8rem;
+    border-radius: 3.2rem;
+    height: 3.8rem;
+    width: 100%;
     font-size: var(--sm);
-    padding: 0px;
-    margin-bottom: 20px;
-    width: 292px;
+    margin-bottom: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    outline: none;
+}
+.input-user:hover, .input-password:hover{
+    box-shadow: 0 0 0.4rem 0 #000001;
 }
 .enter-buttom{
     /*texto interno*/
     text-align: center;
     background-color: var(--buttom-color);
     font-size: var(--sm);
-    font-family: 'Fredoka', sans-serif;
-    font-family: 'Open Sans', sans-serif;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     /*dimensiones y posición del button y del modelo de caja*/
-    width: 150px;
-    height: 50px;
-    margin-top: 14px;
-    margin-bottom: 16px;
+    width: 15rem;
+    height: 5rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1.6rem;
     align-self: center;
     /*estilo*/
     color: var(--white);
     border: none;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     cursor: pointer;
 }
 .enter-buttom:hover{
