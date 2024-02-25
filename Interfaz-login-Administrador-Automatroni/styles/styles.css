@@ -38,6 +38,8 @@ main .container{
     width: 95%;
     max-width: 28rem;
     max-height: 50rem;
+    min-width: 23rem;
+    min-height: 49.8rem;
     background-color: var(--white);
     border: solid var(--white);
     border-radius: 7rem;
